@@ -1,0 +1,30 @@
+Keys:
+
+emp_no in Employees is unique, that is, there is only one employee number per employee. emp_no is therefore a primary key for the Employees table.
+
+emp_no in the Dept_Emp, Titles, Salaries and Dept_Manager tables are all foreign keys to the primary key emp_no in the Employees table. These values are unique to each employee.
+
+Dept_no in Departments is unique, that is, there is only one department number per department. dept_no is the primary key for Departments.
+
+Dept_no in both Dept_Manager and Dept_Emp are foreign keys to the primary key dept_no in Departments, as the values in those tables match the values of dept_no in Departments.
+
+Data Types:
+The data types for all values from the 6 CSV can be seen from the table schema QuickDBD-export_schema.sql
+
+Departments
+dept_no and dept_name in the Departments table are Varchar
+
+Dept_Emp
+emp_no and dept_no in the Dept_Emp tables are all integers
+
+Dept_Manager
+dept_no in the Dept_Manager table is a Varchar and the emp_no an interger
+
+Employees
+emp_no is an interger, whereas birth_date and hire_date are Dates. emp_title_id, first_name, last_name and sex are Varchars
+
+Salaries
+The Salaries table is made up of 2 values, emp_no and salary which are both integers
+
+Titles
+the Titles table also has 2 values, title_id and title which are both Varchars
